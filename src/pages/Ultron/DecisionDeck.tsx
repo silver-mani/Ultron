@@ -14,8 +14,9 @@
 import { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
 import {
-  Button, Eyebrow, Badge, Avatar, ArrowUpRightIcon,
+  Button, Eyebrow, Badge, ArrowUpRightIcon,
 } from 'alloy-design-system';
+import { Avatar } from '../../components/Avatar';
 import type { ThreadItem } from './types';
 import { isRefinementAction, CaseBody } from './ultronShared';
 import { THREAD_SUBJECTS, threadAvatarUrl } from './fixtures';

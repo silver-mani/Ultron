@@ -9,8 +9,9 @@
 import { useEffect, useState, Fragment } from 'react';
 import styled, { keyframes } from 'styled-components';
 import {
-  Avatar, Button, Save01Icon, MinusIcon, ChevronSelectorVerticalIcon, ChevronRightIcon, CheckIcon, LinkExternal01Icon, XCloseIcon, AlertTriangleIcon,
+  Button, Save01Icon, MinusIcon, ChevronDownIcon, ChevronRightIcon, CheckIcon, LinkExternal01Icon, XCloseIcon, AlertTriangleIcon,
 } from 'alloy-design-system';
+import { Avatar } from '../../components/Avatar';
 import type { ChatMessage, ThreadItem } from './types';
 import {
   THREAD_SUBJECTS, threadAvatarUrl, THREAD_PROMPTS, threadDisplayTitle, threadMeta,
@@ -180,7 +181,7 @@ export function UltronCard({ thread, stage, expanded, detachActionable, detachAn
           tabIndex={onClose ? undefined : -1}
           onClick={onClose ?? onToggle}
         >
-          {onClose ? <LinkExternal01Icon size={16} /> : effectiveExpanded ? <ChevronSelectorVerticalIcon size={16} /> : <MinusIcon size={16} />}
+          {onClose ? <LinkExternal01Icon size={16} /> : effectiveExpanded ? <ChevronDownIcon size={16} /> : <MinusIcon size={16} />}
         </Button>
       </CardHeader>
 

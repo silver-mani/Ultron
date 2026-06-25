@@ -6,7 +6,8 @@
    ───────────────────────────────────────────────────────────────────────────── */
 
 import styled from 'styled-components';
-import { Avatar, Button, ArrowUpRightIcon } from 'alloy-design-system';
+import { Button, ArrowUpRightIcon } from 'alloy-design-system';
+import { Avatar } from '../../components/Avatar';
 import type { RecordRef } from './fixtures';
 import { threadAvatarUrl } from './fixtures';
 
