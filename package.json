@@ -10,7 +10,7 @@
     "deploy": "vite build && gh-pages -d dist"
   },
   "dependencies": {
-    "alloy-design-system": "file:/Users/unassignedlaptop9/Documents/MyClaudeFolder/Alloy",
+    "alloy-design-system": "file:../alloy-design-system",
     "clsx": "^2.1.1",
     "geist": "^1.3.0",
     "react": "^18.3.1",
