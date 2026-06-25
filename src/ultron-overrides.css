@@ -1,0 +1,13 @@
+/* ─────────────────────────────────────────────────────────────────────────────
+   Teambridge demo — consumer-side overrides for Alloy.
+   Kept here (not in the design system) so Alloy stays pristine.
+   ───────────────────────────────────────────────────────────────────────────── */
+
+/* Anchor the toast stack to the BOTTOM-right (Alloy defaults to top-right).
+   Targets the ToastStack container by its stable ARIA attributes. The extra
+   `html` raises specificity above the preview harness's own top-offset rule
+   (same selector, !important), and `!important` wins the tie either way. */
+html body > div[aria-live="polite"][aria-atomic="false"] {
+  top: auto !important;
+  bottom: 20px !important;
+}

@@ -1,7 +1,9 @@
 node_modules/
-.DS_Store
-.env
-*.log
 dist/
-build/
+*.tsbuildinfo
+.vite/
+.claude/
+*.log
+.DS_Store
+
 .claude/settings.local.json

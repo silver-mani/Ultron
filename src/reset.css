@@ -1,0 +1,15 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* Push Alloy toast stack below the 48px TopNav so toasts don't sit behind it. */
+body > div[aria-live="polite"][aria-atomic="false"] {
+  top: 60px !important;
+}
